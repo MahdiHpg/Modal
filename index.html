@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="index.css" rel="stylesheet" />
+    <title>modal project</title>
+  </head>
+  <body>
+    <div id="divMain" class="divMain">
+      <div
+        style="
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 10px;
+          padding: 30px 20px;
+        "
+      >
+        <h1>رو دکمه کلیک کنید تا پنجره مودال برایتان نمایش داده شود!</h1>
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 20px 0;
+          "
+        >
+          <button id="btnShowModal" class="btnShowModal">show modal</button>
+        </div>
+      </div>
+    </div>
+
+    <modal id="myModal" class="myModal" style="display: none">
+      <div>
+        <div class="headerModal">
+          <h2>header title</h2>
+          <span class="closeSpan">X</span>
+        </div>
+        <div class="bodyModal">
+          <h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro
+            ipsum vero natus architecto accusantium itaque aspernatur ipsam
+            temporibus dicta, non eos nulla, iure veniam dolore, aperiam
+            exercitationem delectus deleniti doloremque.
+          </h2>
+        </div>
+        <div class="footerModal">
+          <button class="closeBtn">close</button>
+        </div>
+      </div>
+    </modal>
+
+    <script src="script.js"></script>
+  </body>
+</html>
